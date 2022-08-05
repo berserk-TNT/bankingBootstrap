@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Banking</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/css.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h1>List of customers</h1>
+                </div>
+                <div class="col-sm-7">
+                    <a href="/transfers" class="btn btn-outline-light"><i class="fa fa-history" aria-hidden="true"></i> <span>Transfer money Information</span></a>
+                    <a href="/customers/create" class="btn btn-outline-light"><i class="fa-solid fa-square-plus" aria-hidden="true"></i></i> <span>Add New Customer</span></a>     
+                </div>
+            </div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th style="text-align: center;">Balance</th>
+                    <th colspan="5" style="text-align: center;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+<!--                        <td th:text="${customer.deposits.size()}" class="text-center"></td>-->
+                        <td>695</td>
+                        <td>Emi Fry</td>
+                        <td>voxyp@mailinator.com</td>
+                        <td class="text-center">+1 (973) 259-2726</td>
+                        <td>Consectetur veniam </td>
+                        <td class="text-end num-space">0</td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-secondary" title="Edit" data-toggle="tooltip" href="/customers/edit/695">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-success" title="Deposit" data-toggle="tooltip" href="/customers/deposit/695">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-warning" title="Withdraw" data-toggle="tooltip" href="/customers/withdraw/695">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-primary" title="Transfer" data-toggle="tooltip" href="/customers/transfer/695">
+                                <i class="fa fa-exchange" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-danger" title="Suspended" data-toggle="tooltip" href="/customers/suspended/695">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                
+                    <tr>
+<!--                        <td th:text="${customer.deposits.size()}" class="text-center"></td>-->
+                        <td>725</td>
+                        <td>Aline Hopkins</td>
+                        <td>guxoryqimi@mailinator.com</td>
+                        <td class="text-center">+1 (343) 822-6627</td>
+                        <td>Rerum quidem cupidat</td>
+                        <td class="text-end num-space">99000050</td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-secondary" title="Edit" data-toggle="tooltip" href="/customers/edit/725">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-success" title="Deposit" data-toggle="tooltip" href="/customers/deposit/725">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-warning" title="Withdraw" data-toggle="tooltip" href="/customers/withdraw/725">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-primary" title="Transfer" data-toggle="tooltip" href="/customers/transfer/725">
+                                <i class="fa fa-exchange" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-danger" title="Suspended" data-toggle="tooltip" href="/customers/suspended/725">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                
+                    <tr>
+<!--                        <td th:text="${customer.deposits.size()}" class="text-center"></td>-->
+                        <td>735</td>
+                        <td>Mira Blevins</td>
+                        <td>peqybyra@mailinator.com</td>
+                        <td class="text-center">+1 (479) 674-7137</td>
+                        <td>Labore laudantium m</td>
+                        <td class="text-end num-space">12345678</td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-secondary" title="Edit" data-toggle="tooltip" href="/customers/edit/735">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-success" title="Deposit" data-toggle="tooltip" href="/customers/deposit/735">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-warning" title="Withdraw" data-toggle="tooltip" href="/customers/withdraw/735">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-primary" title="Transfer" data-toggle="tooltip" href="/customers/transfer/735">
+                                <i class="fa fa-exchange" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-danger" title="Suspended" data-toggle="tooltip" href="/customers/suspended/735">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                
+                    <tr>
+<!--                        <td th:text="${customer.deposits.size()}" class="text-center"></td>-->
+                        <td>775</td>
+                        <td>Aspen Craig</td>
+                        <td>zufetaxyfo@mailinator.com</td>
+                        <td class="text-center">+1 (105) 117-3702</td>
+                        <td>Aliqua Ex recusanda</td>
+                        <td class="text-end num-space">111111111</td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-secondary" title="Edit" data-toggle="tooltip" href="/customers/edit/775">
+                                <i class="fa-solid fa-pen-to-square"></i>                            
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-success" title="Deposit" data-toggle="tooltip" href="/customers/deposit/775">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-warning" title="Withdraw" data-toggle="tooltip" href="/customers/withdraw/775">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-primary" title="Transfer" data-toggle="tooltip" href="/customers/transfer/775">
+                                <i class="fa fa-exchange" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-danger" title="Suspended" data-toggle="tooltip" href="/customers/suspended/775">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                
+                    <tr>
+<!--                        <td th:text="${customer.deposits.size()}" class="text-center"></td>-->
+                        <td>785</td>
+                        <td>Rashad Aguilar</td>
+                        <td>vubafugo@mailinator.com</td>
+                        <td class="text-center">+1 (162) 295-3508</td>
+                        <td>Dicta dolor est lab</td>
+                        <td class="text-end num-space">0</td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-secondary" title="Edit" data-toggle="tooltip" href="/customers/edit/785">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-success" title="Deposit" data-toggle="tooltip" href="/customers/deposit/785">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-warning" title="Withdraw" data-toggle="tooltip" href="/customers/withdraw/785">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-primary" title="Transfer" data-toggle="tooltip" href="/customers/transfer/785">
+                                <i class="fa fa-exchange" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-danger" title="Suspended" data-toggle="tooltip" href="/customers/suspended/785">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                
+                    <tr>
+<!--                        <td th:text="${customer.deposits.size()}" class="text-center"></td>-->
+                        <td>795</td>
+                        <td>Scarlett Holmes</td>
+                        <td>xehyminus@mailinator.com</td>
+                        <td class="text-center">+1 (207) 846-4893</td>
+                        <td>Totam ipsam et paria</td>
+                        <td class="text-end num-space">0</td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-secondary" title="Edit" data-toggle="tooltip" href="/customers/edit/795">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-success" title="Deposit" data-toggle="tooltip" href="/customers/deposit/795">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-warning" title="Withdraw" data-toggle="tooltip" href="/customers/withdraw/795">
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-primary" title="Transfer" data-toggle="tooltip" href="/customers/transfer/795">
+                                <i class="fa fa-exchange" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a class="btn btn-outline-danger" title="Suspended" data-toggle="tooltip" href="/customers/suspended/795">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                
+            </tbody>
+        </table>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>

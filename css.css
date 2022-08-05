@@ -1,0 +1,17 @@
+.row {
+    background-color: rgb(63, 165, 254);
+}
+
+.col-sm-7 {
+    text-align: right;
+    margin: auto;
+}
+
+thead {
+    background-color: plum;
+    color: rgb(0, 86, 198);
+}
+
+.table {
+    margin-top: 10px;
+}
